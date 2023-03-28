@@ -46,6 +46,7 @@ public with sharing class ProductController {
             if (criteria.size() > 0) {
                 whereClause = 'WHERE ' + String.join(criteria, ' AND ');
             }
+            
         }
         Integer pageSize = ProductController.PAGE_SIZE;
         Integer offset = (pageNumber - 1) * pageSize;
